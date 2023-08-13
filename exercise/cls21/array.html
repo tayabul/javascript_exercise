@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array</title>
+</head>
+    <h1>Array:</h1>
+    <p id="vehicle"></p>
+    <h2>last Array:</h2>
+    <p id="fruit"></p>
+    <h2>List Array</h2>
+    <p id="list"></p>
+
+    <script>
+        const cars = ["Volvo", "BMW", "Toyota"];
+
+        document.getElementById("vehicle").innerHTML = cars;
+        // document.getElementById("vehicle").innerHTML = cars["2"];
+
+        // last Array...
+        const fruits = ["Apple", "Orange", "Banana", "Mango"];
+
+        document.getElementById("fruit").innerHTML = fruits[fruits.length -1];
+
+
+        // list Array...
+        const country = ["Japan", "Newzland", "Bangladesh"];
+        let cLen = country.length;
+
+        let txt = "<ul>";
+        for(i = 0; i < cLen; i++ ){
+            txt += "<li/>" + country[i];
+        }
+
+        document.getElementById("list").innerHTML = txt;
+
+//         const country = ["Banana", "Orange", "Apple", "Mango"];
+//         let fLen = fruits.length;
+
+//         let text = "<ul>";
+//         for (let i = 0; i < fLen; i++) {
+//         text += "<li>" + country[i] ;
+// }
+
+//         document.getElementById("list").innerHTML = text;
+
+    </script>
+</body>
+</html>

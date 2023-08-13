@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript If Else</title>
+</head>
+<body>
+    
+    <script>
+        let marks = 19;
+        grade = null;
+
+        if(marks < 0){
+            alert("Marks can not be Negetive or less than 0");
+        }
+        if(marks <= 33){
+            grade = "F";
+        }
+        if(marks >= 33 && marks < 40) {
+            grade = "D";
+        } 
+        if(marks >= 40 && marks < 50){
+            grade = "C";
+        }
+        if(marks >= 50 && marks < 60){
+            grade ="B";   
+        }
+        if(marks >= 60 && marks < 70){
+            grade ="A-";
+        }
+        if(marks >= 70 && marks < 80){
+            grade = "A";
+        }
+        if(marks >= 80 && marks <=100){
+            grade = "A+";
+        }
+        if(marks > 100){
+            alert("Marks can not be more than 100");
+        }
+
+        console.log(grade);
+    </script>
+</body>
+</html>

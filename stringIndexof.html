@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <p id ="vehicle"></p>
+    <p id ="paregraph"></p>
+    
+    
+    <button onclick= "document.getElementById('date1').innerHTML = Date()">The time is:</button>
+    <p id ="date1"></p>
+
+    <button onmouseover= "this.innerHTML= Date()">Time is :</button>
+    <br/>
+
+    <!-- function.. -->
+    <button onclick="displayDate()">Current Time is:</button>
+    <p id="time"></p>
+
+
+    <script>
+        console.log("Hello World");
+
+    // let text = "Please locate where locate occurs!";
+    // let index = text.indexOf("where");
+    // document.getElementById("demo").innerHTML = index; 
+
+
+    let color = "red blue orange green";
+    let rainbow = color.indexOf("green");
+    document.getElementById("demo").innerHTML = rainbow;
+
+
+    let car= "BMW TOYOTA FERARY MARSERIES";
+    let index = car.indexOf("FERARY");
+    document.getElementById("vehicle").innerHTML = index;
+
+        
+    let paregraph = "This is our Paregraph";
+    let word = paregraph.indexOf("our");
+    document.getElementById("paregraph").innerHTML = word; 
+
+    
+    function displayDate(){
+        document.getElementById("time").innerHTML= Date();
+    }
+</script>
+</body>
+</html>

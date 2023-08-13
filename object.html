@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object</title>
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <script>
+        const car ={
+            carName : "BMW",
+            weight : "854kg",
+            model : "b84398el",
+
+            // function....
+            start : function(){
+                console.log("Car is started");
+            },
+            drive(){
+                console.log("Car is driving");
+            },
+        }
+
+        car.start();
+        console.log(car.carName);
+        console.log(car["model"]);
+        car.drive();
+
+        
+        // function....
+        const shape ={
+            radius: 10,            
+            diameter(){
+                return this.radius * 2;
+            }
+        }
+        console.log(shape.diameter());
+        // end
+
+        // start...
+        const person={
+            firstName: "John",
+            lastName: "Doe"
+        };
+        // alert(person.firstName + " " + person.lastName);
+        // alert(person["firstName"] + " " + person["lastName"]);
+
+        // end
+
+        // start...
+        const moused = {
+            name: 'Mickey',
+            // small: 'true',
+        };
+        const bird = {
+            // size: 'small',
+            mouse: moused,
+        };
+        console.log(bird.mouse.name);
+
+        // end..
+
+    </script>
+
+
+</body>
+</html>
