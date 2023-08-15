@@ -8,9 +8,8 @@
 <body>
     <h1>Hello</h1>
 
-
-
     <script>
+        // exercise1..
         let x = 5;
         let y = 3;
         console.log(x+y);
@@ -22,6 +21,46 @@
         sleep("Karim", "7 am");
         sleep("Jone", "6 am");
 
+
+        // exercise2..
+        function cow(){
+            return "Cow is a Animal";
+        }
+        console.log(cow());
+
+        // exercise3..
+        let cow1 = function(sentense){
+            return sentense;
+        }
+        console.log(cow1("This is a Animal."));
+
+        // exercise4..
+       let home = function(){
+            return {'door': 4};  //object..
+        }
+        // let a = home();
+        // console.log(a.door);     //or
+        console.log(home().door);
+
+        // exercise5... function in function...
+        let student = function(){
+            return function(){
+                return "I am a Student";
+            }
+        }
+        // let xyz = student();
+        // console.log(xyz());          //or
+        console.log(student()());
+
+
+        // exercise4..
+        let animal = function(animal){
+            return animal;
+        }
+        let cat = {'leg': 4}
+        let count = animal(cat);
+        console.log(count.leg);         //or
+        // console.log(animal(cat.leg));
 
 
     </script>
